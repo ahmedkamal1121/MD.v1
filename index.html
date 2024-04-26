@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="crads.css">
+</head>
+<body>
+    <div class="contenier">
+        <div class="head">
+            <h1>CRUDS</h1>
+            <h4>CREAT  READ  UPDATE  DELEAT  SERCH</h4>
+        </div>
+
+        <div class="inputs">
+            <input type="text" placeholder="title" id="title">
+            <div class="price">
+                <input type="number" onkeyup="gettotal()" id="pricess" placeholder="pricess">
+                <input type="number" onkeyup="gettotal()" id="taxes" placeholder="taxes">
+                <input type="number" onkeyup="gettotal()" id="ads" placeholder="ads">
+                <input type="number" onkeyup="gettotal()" id="dis" placeholder="discount">
+                <small id="total"></small>
+            </div>
+            <input type="text" placeholder="cont" id="cont">
+            <input type="text" placeholder="catagory" id="catagory">
+        </div>
+        <button id="btnc" onclick="createProdect()">create</button>
+        <input onkeyup="serchf(this.value)" type="text" placeholder="serch" id="serch">
+      
+
+
+<div class="output">
+    
+
+    <div class="serch">
+        <button id="titleser" onclick="getsermood(this.id)">serch by title</button>
+        <button id="catagoryser" onclick="getsermood(this.id)">serch by catgory</button>
+    </div>
+
+
+
+<div id="delateall">
+
+</div>
+
+
+
+    <table>
+           <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+           </tr>
+           <tbody id="tbody">
+           
+           </tbody>
+     
+    </table>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    
+
+    <script src="crads.js"></script>
+</body>
+</html>
